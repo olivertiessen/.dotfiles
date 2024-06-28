@@ -119,5 +119,10 @@ export TERM='xterm-256color'
 eval "$(register-python-argcomplete3 ros2)"
 eval "$(register-python-argcomplete3 colcon)"
 
+# aliases
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+
 # ROS2
 source /opt/ros/humble/setup.zsh
