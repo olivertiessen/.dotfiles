@@ -19,8 +19,8 @@ cd ~/.dotfiles
 
 This script installs the following tools and dependencies:
 
-> [Oh My Bash](https://github.com/ohmybash/oh-my-bash)
-> [tmux](https://github.com/tmux/tmux)
+- [Oh My Bash](https://github.com/ohmybash/oh-my-bash)
+- [tmux](https://github.com/tmux/tmux)
 
 **Install GNU Stow**
 

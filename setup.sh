@@ -17,8 +17,21 @@ install_oh_my_bash() {
     fi
 }
 
+install_tmux() {
+    echo "Installing tmux..."
+    sudo apt update
+    sudo apt install -y tmux
+}
+
+install_stow() {
+    echo "Installing GNU Stow..."
+    sudo apt install -y stow
+}
+
 # --- Run Installation Tasks ---
 
 install_oh_my_bash
+install_tmux
+install_stow
 
 echo "Setup complete!"
