@@ -20,18 +20,11 @@ chmox +x setup.sh
 
 This script installs the following tools and dependencies:
 
-- [Oh My Bash](https://github.com/ohmybash/oh-my-bash)
-- [tmux](https://github.com/tmux/tmux)
+- [Oh My Bash](https://github.com/ohmybash/oh-my-bash) is a shell enhancer that includes skins.
+- [tmux](https://github.com/tmux/tmux) is a terminal multiplexer.
+- [GNU Stow](https://www.gnu.org/software/stow/) is a symlink farm manager. It creates symbolic links from this repository to your home directory, making it easy to keep your setup organized and version-controlled.
 
-**Install GNU Stow**
-
-[GNU Stow](https://www.gnu.org/software/stow/) is a symlink farm manager. It helps you manage your dotfiles by creating symbolic links from this repository to your home directory, making it easy to keep your setup organized and version-controlled.
-
-```bash
-sudo apt install stow
-```
-
-**Symlink dotfiles to your home directory**
+**Symlink dotfiles to your home directory with stow**
 
 ```bash
 stow --adopt .
