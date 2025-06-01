@@ -160,3 +160,8 @@ source "$OSH"/oh-my-bash.sh
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
+
+# aliases
+if [ -f ~/.ros_config ]; then
+    source ~/.ros_config
+fi
