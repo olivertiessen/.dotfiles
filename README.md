@@ -13,7 +13,7 @@ git clone https://github.com/olivertiessen/.dotfiles.git
 **Run the installation shell script**
 
 ```bash
-cd ~/.dotfiles
+cd .dotfiles
 chmox +x setup.sh
 ./setup.sh
 ```
