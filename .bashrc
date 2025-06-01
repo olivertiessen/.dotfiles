@@ -161,7 +161,7 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
-# aliases
-if [ -f ~/.ros_config ]; then
+# ros
+if [ -f ~/.rosrc ]; then
     source ~/.rosrc
 fi
