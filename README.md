@@ -27,6 +27,7 @@ This script installs the following tools and dependencies:
 **Symlink dotfiles to your home directory with stow**
 
 ```bash
+cd .dotfiles
 stow --adopt .
 ```
 > The `--adopt` flag will replace existing files in your home directory if there are conflicts.
