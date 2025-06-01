@@ -14,7 +14,8 @@ git clone https://github.com/olivertiessen/.dotfiles.git
 
 ```bash
 cd ~/.dotfiles
-./install.sh
+chmox +x setup.sh
+./setup.sh
 ```
 
 This script installs the following tools and dependencies:
