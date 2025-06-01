@@ -163,5 +163,5 @@ fi
 
 # aliases
 if [ -f ~/.ros_config ]; then
-    source ~/.ros_config
+    source ~/.rosrc
 fi
