@@ -35,5 +35,5 @@ stow --adopt .
 
 ## ⚠️ Editing Dotfiles
 
-From now on, all configuration files should only be edited inside the `.dotfiles` directory. These files are symlinked into your home directory using GNU Stow, so `~/.tmux.conf` is just a pointer to `dotfiles/tmux/.tmux.conf`. Editing the source files ensures changes are tracked properly (e.g. with Git), and avoids accidentally breaking symlinks by overwriting them.
+From now on, all configuration files should only be edited inside the `.dotfiles` directory. These files are symlinked into your home directory using GNU Stow, so `~/.tmux.conf` is just a pointer to `~/.dotfiles/tmux/.tmux.conf`. Editing the source files ensures changes are tracked properly (e.g. with Git), and avoids accidentally breaking symlinks by overwriting them.
 
