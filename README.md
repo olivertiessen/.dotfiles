@@ -1,6 +1,8 @@
 # My Dotfiles
 
-This repository contains my personal configuration files (dotfiles) for Debian-based systems. The setup is minimal, does not require nerd fonts, and is designed to work out-of-the-box. A configuration with nerdfonts and more complex steps will be covered in a seperate branch.
+This repository contains my personal configuration files (dotfiles) for Debian-based systems. The setup is designed to work out-of-the-box on all systems without further interventions.
+
+However, tmux may display missing symbols if your terminal is not configured to use Nerd Fonts. This configuration step must be done manually and cannot be automated.
 
 ## Quick Start
 
@@ -22,7 +24,7 @@ This script installs the following tools and dependencies:
 
 - [Oh My Bash](https://github.com/ohmybash/oh-my-bash) is a shell enhancer that includes skins.
 - [tmux](https://github.com/tmux/tmux) is a terminal multiplexer.
-- [tpm](https://github.com/tmux-plugins/tpm) is a plugin manager for tmux, it is required for catppuccin theme.
+- [tpm](https://github.com/tmux-plugins/tpm) is a plugin manager for tmux, it is required for [catppuccin tmux theme](https://github.com/catppuccin/tmux).
 - [GNU Stow](https://www.gnu.org/software/stow/) is a symlink farm manager. It creates symbolic links from this repository to your home directory, making it easy to keep your setup organized and version-controlled.
 
 **Symlink dotfiles to your home directory with stow**
