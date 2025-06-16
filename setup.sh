@@ -28,10 +28,21 @@ install_stow() {
     sudo apt install -y stow
 }
 
+install_tpm() {
+    local TPM_DIR="$HOME/.tmux/plugins/tpm"
+    if [ -d "$TPM_DIR" ]; then
+        echo "TPM is already installed."
+    else
+        echo "Installing TPM..."
+        git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
+    fi
+}
+
 # --- Run Installation Tasks ---
 
 install_oh_my_bash
 install_tmux
 install_stow
+install_tpm
 
 echo "Setup complete!"
