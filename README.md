@@ -33,3 +33,7 @@ stow --adopt .
 ```
 > The `--adopt` flag will replace existing files in your home directory if there are conflicts.
 
+## ⚠️ Editing Dotfiles
+
+From now on, all configuration files should only edited inside the `.dotfiles` directory. These files are symlinked into your home directory using GNU Stow, so `~/.tmux.conf` is just a pointer to `dotfiles/tmux/.tmux.conf`. Editing the source files ensures changes are tracked properly (e.g. with Git), and avoids accidentally breaking symlinks by overwriting them.
+
