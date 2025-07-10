@@ -2,7 +2,7 @@
 
 set -e  # Exit on any error
 set -u  # Treat unset variables as an error
-set -o pipefail  # Catch errors in piped commands
+set -o pipefail  # Catch errors in piped commands (only works with Bash)
 
 echo "Starting setup..."
 
@@ -38,11 +38,25 @@ install_tpm() {
     fi
 }
 
+install_nvim() {
+    echo "Installing Neovim (latest release)..."
+    cd "$HOME"
+    curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz 
+
+    sudo rm -rf /opt/nvim
+    sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+    rm -f nvim-linux-x86_64.tar.gz
+    echo "Neovim installed to /opt/nvim-linux-x86_64"
+}
+
 # --- Run Installation Tasks ---
 
 install_oh_my_bash
 install_tmux
 install_stow
 install_tpm
+install_nvim
 
 echo "Setup complete!"
+

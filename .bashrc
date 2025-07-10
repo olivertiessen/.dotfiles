@@ -165,3 +165,6 @@ fi
 if [ -f ~/.rosrc ]; then
     source ~/.rosrc
 fi
+
+# nvim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
